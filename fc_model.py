@@ -38,9 +38,6 @@ class Network(nn.Module):
 def validation(model, testloader, criterion):
 	test_loss = 0
 	accuracy = 0
-
-	# Turn on evaluation mode (no dropout) and turn off gradient computation
-	model.eval()
 	
 	for images, labels in testloader:
 
